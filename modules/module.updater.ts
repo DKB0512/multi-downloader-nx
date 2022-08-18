@@ -54,7 +54,7 @@ export default (async (force = false) => {
     }
   }
   console.log('Checking for updates...');
-  const tagRequest = await got('https://api.github.com/repos/anidl/multi-downloader-nx/tags');
+  const tagRequest = await got('https://api.github.com/repos/animedl/multi-downloader-nx/tags');
   const tags = JSON.parse(tagRequest.body) as GithubTag[];
 
   if (tags.length > 0) {
@@ -68,7 +68,7 @@ export default (async (force = false) => {
       return done();
     }
     const newest = newer.sort((a, b) => a.name < b.name ? 1 : a.name > b.name ? -1 : 0)[0];
-    const compareRequest = await got(`https://api.github.com/repos/anidl/multi-downloader-nx/compare/${packageJson.version}...${newest.name}`);
+    const compareRequest = await got(`https://api.github.com/repos/animedl/multi-downloader-nx/compare/${packageJson.version}...${newest.name}`);
 
     const compareJSON = JSON.parse(compareRequest.body) as TagCompare;
 

@@ -14,14 +14,14 @@
     "utility",
     "cli"
   ],
-  "author": "Izu-co <github@izuco.dev> ",
-  "homepage": "https://github.com/anidl/multi-downloader-nx",
+  "author": "AnimeDL",
+  "homepage": "https://github.com/animedl/multi-downloader-nx",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anidl/multi-downloader-nx.git"
+    "url": "https://github.com/animedl/multi-downloader-nx.git"
   },
   "bugs": {
-    "url": "https://github.com/anidl/multi-downloader-nx/issues"
+    "url": "https://github.com/animedl/multi-downloader-nx/issues"
   },
   "license": "MIT",
   "main": "gui/electron/src/index.js",
@@ -95,7 +95,7 @@
     "test": "cd lib && node modules/build windows64 && node modules/build ubuntu64 && node modules/build macos64"
   },
   "build": {
-    "appId": "github.com/anidl",
+    "appId": "github.com/animedl",
     "mac": {
       "category": "public.app-category.developer-tools",
       "darkModeSupport": true
